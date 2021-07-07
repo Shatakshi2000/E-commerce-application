@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.foodstuff">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FoodStuff">
+        <activity android:name="Customer.CustomerSpicesActivity"></activity>
+        <activity android:name="Customer.CustomerDairyActivity" />
+        <activity android:name="Customer.CustomerVegetableActivity" />
+        <activity android:name="Customer.CustomerFruitActivity" />
+        <activity android:name=".ReviewActivity" />
+        <activity android:name=".CartActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCrUfxH8LawgKd7sbkrptbVAu-VuAoZS3c" />
+
+        <activity android:name="Customer.CustomerHomeActivity" />
+        <activity android:name="Retailer.RetailerDairyActivity" />
+        <activity android:name="Retailer.RetailerSpiceActivity" />
+        <activity android:name="Retailer.RetailerVegetableActivity" />
+        <activity android:name="Retailer.RetailerFruitActivity" />
+        <activity android:name="Retailer.RetailerHomeActivity" />
+        <activity android:name="AddProduct.AddNewProduct" />
+        <activity android:name="Categories.DairyActivity" />
+        <activity android:name="Categories.SpiceActivity" />
+        <activity android:name="Categories.FruitActivity" />
+        <activity android:name="Categories.VegetableActivity" />
+        <activity android:name=".ManageOTP" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".ExistingActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

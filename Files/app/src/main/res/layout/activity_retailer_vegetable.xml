@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        app:titleTextColor="@color/white"
+        app:title="VEGETABLES"
+        android:textAlignment="center"
+        android:id="@+id/retailer_vegetables_toolbar"
+        android:gravity="center_horizontal" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id = "@+id/reatiler_tab_layout"
+        android:layout_below="@id/retailer_vegetables_toolbar"
+        android:background="@color/green"
+        app:tabIndicator="@color/black"
+        >
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/products_on_sale"
+            android:text="My Shop"
+            />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/product_to_buy"
+            android:text="Shopping"
+            />
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/retailer_viewpager"
+        android:layout_below="@+id/reatiler_tab_layout"/>
+
+
+
+
+
+
+</RelativeLayout>

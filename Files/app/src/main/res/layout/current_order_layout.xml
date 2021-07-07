@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardElevation="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/current_order_product_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+
+        <TextView
+            android:id="@+id/current_order_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/current_order_product_image"
+            android:fontFamily="serif"
+            android:text="Product name"
+            android:textColor="#CC0F1010"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/current_order_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/current_order_product_name"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/current_order_product_image"
+            android:fontFamily="monospace"
+            android:text="quantity"
+            android:textColor="#800F1010"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/current_order_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/current_order_quantity"
+            android:layout_marginLeft="27dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/current_order_product_image"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="price"
+            android:textColor="#0F1010"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of quantity:"
+            android:layout_toRightOf="@id/current_order_product_image"
+            android:layout_below="@id/current_order_price"
+            android:textSize="20dp"
+            android:layout_marginLeft="25dp"
+            android:id="@+id/t1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/current_order_price"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/t1"
+            android:text="1"
+            android:id="@+id/current_order_number"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address:"
+            android:textSize="20dp"
+            android:id="@+id/t3"
+            android:layout_below="@id/current_orders_phone_number"
+            android:layout_marginLeft="16dp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="44,Gangotri Vihar,Canal Road,Dehradun"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/t3"
+            android:layout_marginLeft="10sp"
+            android:layout_below="@id/current_orders_phone_number"
+            android:id="@+id/current_orders_address"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number:"
+            android:textSize="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_below="@id/current_order_product_image"
+            android:id="@+id/t2"
+            android:layout_marginLeft="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/t2"
+            android:layout_marginLeft="10sp"
+            android:layout_below="@id/current_order_product_image"
+            android:layout_marginTop="30dp"
+            android:id="@+id/current_orders_phone_number"
+            android:text="9917187733"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/current_order_product_image"
+            android:text="key"
+            android:textSize="20dp"
+            android:id="@+id/current_order_key"
+            android:background="@drawable/input_backgroung_design"
+            />
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_backgroung_design"
+            android:backgroundTint="@color/green"
+            android:text="Confirm Order"
+            android:layout_below="@id/current_orders_address"
+            android:layout_marginTop="40dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:id="@+id/confirm_order"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

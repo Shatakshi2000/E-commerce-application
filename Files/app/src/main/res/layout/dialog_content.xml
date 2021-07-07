@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text="Update content panel"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:padding="10sp"
+        android:textStyle="bold"
+        android:id="@+id/update_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_content"
+        android:layout_marginTop="16dp"
+        android:hint="Image Url"
+        android:textSize="20sp"
+        android:id="@+id/update_image_url"
+        />
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/update_image_url"
+    android:layout_marginTop="16dp"
+    android:hint="Quantity"
+    android:textSize="20sp"
+    android:id="@+id/update_product_name"
+    />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_product_name"
+        android:layout_marginTop="16dp"
+        android:hint="Price"
+        android:textSize="20sp"
+        android:id="@+id/update_price"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_price"
+        android:layout_marginTop="16dp"
+        android:hint="Quantity"
+        android:textSize="20sp"
+        android:id="@+id/update_quantity"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/update_quantity"
+        android:layout_marginLeft="105dp"
+        android:layout_marginTop="53dp"
+        android:background="@color/green"
+        android:padding="10sp"
+        android:text="Update"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/button_update"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/green"
+        app:title="CART"
+        app:titleTextColor="@color/white"
+        app:titleMarginStart="175dp"
+        android:id="@+id/cart_toolbar"
+
+        />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/shopping_cart"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cart_recview"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:layout_below="@+id/cart_toolbar" />
+
+    <Button
+        android:id="@+id/payment_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculate_payment"
+
+        android:background="@color/green"
+        android:text="Make Payment"
+
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/calculate_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cart_recview"
+        android:background="#3300FF00"
+        android:gravity="center_horizontal"
+        android:text="Total payment"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+
+</RelativeLayout>

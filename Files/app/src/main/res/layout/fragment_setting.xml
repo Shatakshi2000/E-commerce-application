@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.foodstuff.SettingFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Settings"
+            android:background="@color/green"
+            android:id="@+id/setting_toolbar"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/setting_user_profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="@dimen/ccp_padding"
+            android:src="@drawable/profile"
+            app:civ_border_color="@color/green"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            app:civ_border_width="2dp"
+            android:layout_below="@id/setting_toolbar"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_user_profile_image"
+            android:layout_marginTop="50dp"
+            android:textSize="20sp"
+            android:text="Username"
+            android:textColor="@color/black"
+            android:padding="5sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/setting_username"
+            android:background="@drawable/input_backgroung_design"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_username"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:padding="5sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/setting_phone_number"
+            android:background="@drawable/input_backgroung_design"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_phone_number"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:text="Address"
+            android:textColor="@color/black"
+            android:padding="5sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/settings_address"
+            android:background="@drawable/input_backgroung_design"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Settings"
+
+            android:layout_below="@id/settings_address"
+            android:layout_marginTop="55dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="150sp"
+            android:id="@+id/edit_user_settings"
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/setting_user_profile_image"
+            android:layout_marginLeft="-35dp"
+            android:layout_marginTop="-40dp"
+            android:layout_toRightOf="@id/setting_user_profile_image"
+            app:srcCompat="@drawable/ic_baseline_create_24"
+            android:id="@+id/edit_user_profile_image"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_user_profile_image"
+            android:layout_marginTop="27dp"
+            android:text="username"
+            android:layout_marginLeft="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_username"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:layout_marginLeft="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/setting_phone_number"
+            android:layout_marginTop="10dp"
+            android:text="Adress"
+            android:layout_marginLeft="16dp"/>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

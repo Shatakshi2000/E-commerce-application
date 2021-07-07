@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="HOME"/>
+    <item android:id="@+id/menu_current_orders"
+        android:icon="@drawable/order"
+        android:title="ORDERS"/>
+
+    <item android:id="@+id/menu_history"
+        android:icon="@drawable/order_history"
+        android:title="ORDER HISTORY"/>
+    <item android:id="@+id/menu_placed_orders"
+        android:icon="@drawable/placed_order"
+        android:title="PLACED ORDERS"/>
+    <item android:id="@+id/menu_settings"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="SETTINGS"/>
+    <item android:id="@+id/menu_logout"
+        android:icon="@drawable/ic_baseline_logout_24"
+        android:title="LOGOUT"/>
+
+
+
+</menu>
